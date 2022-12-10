@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #f9fafb;
+}
+
 p {
   white-space: nowrap;
   overflow: hidden;
@@ -12,12 +16,12 @@ p {
 }
 
 /* Global styling end */
+
 /* main styling start */
 main {
   position: relative;
   width: 1440px;
   height: 1024px;
-  /* tailwind/gray/50 */
   background: #f9fafb;
 }
 
@@ -27,17 +31,11 @@ h1 {
   height: 87px;
   left: 532px;
   top: 35px;
-  /* text-7xl/black
-tailwind-text-7xl/black
-*/
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 87px;
-
-  /* tailwind/slate/200 */
-
   color: #e2e8f0;
 }
 
@@ -47,7 +45,6 @@ tailwind-text-7xl/black
   align-items: flex-start;
   padding: 0px;
   gap: 34px;
-
   position: absolute;
   width: 445px;
   height: 1196px;
@@ -61,22 +58,11 @@ tailwind-text-7xl/black
   align-items: flex-start;
   padding: 26px 34px;
   gap: 12px;
-
   width: 445px;
   height: 171px;
-
-  /* tailwind/white */
-
   background: #ffffff;
-  /* shadow-sm
-
-tailwind-shadow-sm
-*/
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -88,10 +74,8 @@ tailwind-shadow-sm
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
-
   width: 377px;
   height: 119px;
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -100,24 +84,12 @@ tailwind-shadow-sm
 .div1 h4 {
   width: 221px;
   height: 29px;
-
-  /* text-2xl/extra bold
-  
-  tailwind-text-2xl/extra bold
-  */
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
-
-  /* tailwind/gray/700 */
-
   color: #374151;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -126,23 +98,12 @@ tailwind-shadow-sm
 .div1 p {
   width: 377px;
   height: 41px;
-
-  /* text-base/medium
-  
-  tailwind-text-base/medium
-  */
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-
-  /* tailwind/gray/500 */
-
   color: #6b7280;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -154,22 +115,11 @@ tailwind-shadow-sm
   align-items: flex-start;
   padding: 26px 34px;
   gap: 12px;
-
   width: 445px;
   height: 171px;
-
-  /* tailwind/white */
-
   background: #ffffff;
-  /* shadow-sm
-
-tailwind-shadow-sm
-*/
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -181,12 +131,8 @@ tailwind-shadow-sm
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
-
   width: 377px;
   height: 119px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -195,24 +141,12 @@ tailwind-shadow-sm
 .div2 h4 {
   width: 221px;
   height: 29px;
-
-  /* text-2xl/extra bold
-
-tailwind-text-2xl/extra bold
-*/
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
-
-  /* tailwind/gray/700 */
-
   color: #374151;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -221,230 +155,23 @@ tailwind-text-2xl/extra bold
 .div2 p {
   width: 377px;
   height: 41px;
-
-  /* text-base/medium
-
-tailwind-text-base/medium
-*/
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-
-  /* tailwind/gray/500 */
-
   color: #6b7280;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.div3 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 26px 34px;
-  gap: 12px;
-
-  width: 445px;
-  height: 171px;
-
-  /* tailwind/white */
-
-  background: #ffffff;
-  /* shadow-sm
-
-tailwind-shadow-sm
-*/
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
-.div3 div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
-  width: 377px;
-  height: 119px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.div3 h4 {
-  width: 221px;
-  height: 29px;
-
-  /* text-2xl/extra bold
-
-tailwind-text-2xl/extra bold
-*/
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-
-  /* tailwind/gray/700 */
-
-  color: #374151;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.div3 p {
-  width: 377px;
-  height: 41px;
-
-  /* text-base/medium
-
-tailwind-text-base/medium
-*/
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  /* tailwind/gray/500 */
-
-  color: #6b7280;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.div4 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 26px 34px;
-  gap: 12px;
-
-  width: 445px;
-  height: 171px;
-
-  /* tailwind/white */
-
-  /* background: #ffffff; */
-  /* shadow-sm
-
-tailwind-shadow-sm
-*/
-  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); */
-  border-radius: 8px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-
-  background: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1)
-  );
-}
-
-.div4 div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
-  width: 377px;
-  height: 119px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.div4 h4 {
-  width: 221px;
-  height: 29px;
-
-  /* text-2xl/extra bold
-
-tailwind-text-2xl/extra bold
-*/
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-
-  /* tailwind/gray/700 */
-
-  color: #374151;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.div4 p {
-  width: 377px;
-  height: 41px;
-
-  /* text-base/medium
-
-tailwind-text-base/medium
-*/
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  /* tailwind/gray/500 */
-
-  color: #6b7280;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 #vector {
-  position: absolute;
-  left: 48.12%;
+  position: fixed;
+  left: 76%;
   right: 49.38%;
   top: 91.7%;
-  bottom: 4.79%;
+  bottom: 0%;
 }
 
 #vector:hover {
@@ -457,7 +184,6 @@ tailwind-text-base/medium
   align-items: flex-start;
   padding: 0px;
   gap: 34px;
-
   position: absolute;
   width: 445px;
   height: 1196px;
@@ -471,22 +197,11 @@ tailwind-text-base/medium
   align-items: flex-start;
   padding: 26px 34px;
   gap: 12px;
-
   width: 445px;
   height: 171px;
-
-  /* tailwind/white */
-
   background: #ffffff;
-  /* shadow-sm
-
-tailwind-shadow-sm
-*/
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -495,24 +210,12 @@ tailwind-shadow-sm
 .add-page-div h4 {
   width: 221px;
   height: 29px;
-
-  /* text-2xl/extra bold
-
-tailwind-text-2xl/extra bold
-*/
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
-
-  /* tailwind/gray/700 */
-
   color: #374151;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -524,14 +227,7 @@ tailwind-text-2xl/extra bold
   height: 331px;
   left: -5px;
   top: 568px;
-
-  /* tailwind/white */
-
   background: #ffffff;
-  /* shadow-sm
-
-tailwind-shadow-sm
-*/
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
@@ -550,9 +246,6 @@ tailwind-shadow-sm
   height: 44px;
   left: 43px;
   top: 0px;
-
-  /* tailwind/gray/100 */
-
   border: 1px solid #f3f4f6;
   border-radius: 4px;
 }
@@ -576,9 +269,6 @@ tailwind-shadow-sm
   height: 70px;
   left: 43px;
   top: 64px;
-
-  /* tailwind/gray/100 */
-
   border: 1px solid #f3f4f6;
   border-radius: 4px;
 }
