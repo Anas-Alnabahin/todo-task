@@ -3,6 +3,7 @@ const addPage = document.getElementById('addPage');
 const addBtn = document.getElementById('vector');
 const xBtn = document.getElementById('xMark');
 const tBtn = document.getElementById('tMark');
+const main = document.querySelector('main');
 
 
 let counter = 0;
@@ -60,12 +61,11 @@ flex: none;
 order: 1;
 flex-grow: 0;`;
 addBtn.onclick = () => {
-    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollTop = 1000000;
     addBtn.style.display = 'none';
-    todoPage.style.display = 'none';
     addPage.style.display = 'flex';
-    xBtn.style.display = 'block';
-    tBtn.style.display = 'block';
+    main.innerHTML += `<img src="images/xmark.png" id="xMark">
+    <img src="images/6a7mark.png" id="tMark">`
 };
 
 window.onload = () => {
