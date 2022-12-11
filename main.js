@@ -1,10 +1,7 @@
 const todoPage = document.getElementById('todoPage');
 const addPage = document.getElementById('addPage');
 const addBtn = document.getElementById('vector');
-const xBtn = document.getElementById('xMark');
-const tBtn = document.getElementById('tMark');
 const main = document.querySelector('main');
-
 
 let counter = 0;
 
@@ -65,8 +62,44 @@ addBtn.onclick = () => {
     addBtn.style.display = 'none';
     addPage.style.display = 'flex';
     main.innerHTML += `<img src="images/xmark.png" id="xMark">
-    <img src="images/6a7mark.png" id="tMark">`
+    <img src="images/6a7mark.png" id="tMark">`;
+    const xBtn = document.getElementById('xMark');
+    const tBtn = document.getElementById('tMark');
+    const in1 = document.getElementById('input1');
+    const in2 = document.getElementById('input2');
+    in1.onclick = () => {
+        in1.innerText = "";
+    }
+
+    in2.onclick = () => {
+        in2.textContent = "";
+    }
+
+    xBtn.onclick = () => {
+        location.reload();
+    };
+
+    tBtn.onclick = () => {
+        let myPost = {
+            userId: 5,
+            title: in1.textContent,
+            body: in2.textContent
+        }
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(myPost),
+        })
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((error) => {
+            console.log(error);
+        });
+    };
 };
+
 
 window.onload = () => {
     let req = new XMLHttpRequest();
@@ -92,4 +125,4 @@ window.onload = () => {
     }
         req.open('GET', 'https://jsonplaceholder.typicode.com/posts');
         req.send();
-    };
+};
