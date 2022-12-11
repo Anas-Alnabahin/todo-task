@@ -81,7 +81,6 @@ addBtn.onclick = () => {
 
     tBtn.onclick = () => {
         let myPost = {
-            userId: 5,
             title: in1.textContent,
             body: in2.textContent
         }
@@ -93,10 +92,15 @@ addBtn.onclick = () => {
         body: JSON.stringify(myPost),
         })
         .then((res) => res.json())
-        .then((data) => console.log(data))
+        .then((data) => {
+            //The Date that was created and sent to the api using POST wil be printed in the console
+            console.log(data);
+        })
         .catch((error) => {
             console.log(error);
         });
+        in1.innerText = "";
+        in2.innerText = "";
     };
 };
 
@@ -108,7 +112,7 @@ window.onload = () => {
         if(this.readyState === 4 && this.status === 200){
             const res = JSON.parse(req.responseText);
             for(let x = 0; x < res.length; x++){
-                console.log(res[x].id);
+                // console.log(res[x].id);
                 todoPage.innerHTML += `<div style='${outerDiv} order: ${counter};'>
                                             <div style='${innerDiv}'>
                                                 <h4 style='${theH4} overflow: hidden;'>
@@ -118,7 +122,7 @@ window.onload = () => {
                                                     ${res[x].body}
                                                 </p>
                                             </div>
-                                      </div>`
+                                      </div>`;
                 counter++;
             }
         }
